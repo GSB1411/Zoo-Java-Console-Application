@@ -1,23 +1,23 @@
 package com.ing.zoo;
 
-public class Hippo extends Herbivore{
+public class Hyena extends Carnivore {
     public String name;
     public String helloText;
     public String eatText;
 
-    public Hippo()
-    {
+    public Hyena(){
+
     }
 
-    public void sayHello()
-    {
-        helloText = "splash";
+    public void sayHello(){
+        helloText = "Whine whine";
         System.out.println(helloText);
     }
 
-    public void eatLeaves()
-    {
-        eatText = "munch munch lovely";
+    public void eatMeat(){
+        eatText = "whine nom whine nom";
         System.out.println(eatText);
     }
+
+
 }
