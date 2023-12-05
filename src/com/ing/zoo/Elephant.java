@@ -1,12 +1,16 @@
 package com.ing.zoo;
 
-public class Elephant extends Herbivore {
-    public String name;
+import com.ing.zoo.Animal;
+import com.ing.zoo.Herbivore;
+
+public class Elephant extends Animal implements Herbivore {
+
     public String helloText;
     public String eatText;
 
-    public Elephant(){
+    public Elephant(String name){
 
+        super(name);
     }
 
     public void sayHello(){

@@ -1,15 +1,20 @@
 package com.ing.zoo;
 
+import com.ing.zoo.Animal;
+import com.ing.zoo.Carnivore;
+import com.ing.zoo.PerformTrick;
+
 import java.util.Random;
 
-public class Tiger extends Carnivore{
-    public String name;
+public class Tiger extends Animal implements Carnivore, PerformTrick {
+
     public String helloText;
     public String eatText;
     public String trick;
 
-    public Tiger()
+    public Tiger(String name)
     {
+        super(name);
     }
 
     public void sayHello()
