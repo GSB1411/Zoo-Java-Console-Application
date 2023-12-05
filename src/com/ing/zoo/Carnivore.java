@@ -1,9 +1,6 @@
 package com.ing.zoo;
 
-public class Carnivore extends Animal{
+public interface Carnivore {
 
-    void eatMeat(){
-        System.out.println(eatText);
-    }
-
+    void eatMeat();
 }

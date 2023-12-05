@@ -1,10 +1,14 @@
 package com.ing.zoo;
 
 public abstract class Animal {
-    String name;
+    public String name;
     String eatText;
 
-    void sayHello(){
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public void sayHello(){
 
     }
 
@@ -21,4 +25,7 @@ public abstract class Animal {
 
     }
 
+    public String getName() {
+        return name;
+    }
 }
